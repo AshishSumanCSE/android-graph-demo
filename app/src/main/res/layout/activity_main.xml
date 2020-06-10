@@ -20,26 +20,29 @@
         android:orientation="vertical"
         tools:context=".MainActivity"
         >
-
-      <com.db.williamchart.view.DonutChartView
-          android:id="@+id/donutChart"
-          android:layout_width="@dimen/dimen_200dp"
+      <com.mindorks.RadialProgressBar
+          android:id="@+id/radialChart"
+          android:layout_width="200dp"
           android:layout_height="200dp"
-          android:layout_margin="10dp"
           />
-
-      <com.db.williamchart.view.LineChartView
+      <com.example.androidgraph.FilledLineChart
           android:id="@+id/lineChart"
           android:layout_width="match_parent"
           android:layout_height="200dp"
-          android:layout_margin="10dp"
+          android:layout_marginTop="50dp"
           />
-
-      <com.db.williamchart.view.BarChartView
+      <com.example.androidgraph.CustomBarChart
           android:id="@+id/barChart"
           android:layout_width="match_parent"
           android:layout_height="200dp"
-          android:layout_margin="10dp"
+          android:layout_marginTop="50dp"
+          />
+      <com.example.androidgraph.SmoothLineChart
+          android:id="@+id/smoothLineChart"
+          android:layout_width="match_parent"
+          android:layout_height="200dp"
+          android:layout_marginTop="50dp"
+          android:layout_marginBottom="30dp"
           />
     </LinearLayout>
 
